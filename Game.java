@@ -1,10 +1,17 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
         int num, headsNum = 0, tailsNum = 0;
+        String name;
         Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
         String[] coin = { "Heads", "Tails" };
+
+        System.out.print("Who are you?\n> ");
+        name = sc.nextLine();
+        System.out.printf("Hello, %s!\n", name);
 
         System.out.println("Tossing a coin...");
         for (int i = 1; i < 4; i++) {
