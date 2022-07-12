@@ -17,5 +17,10 @@ public class Game {
         }
 
         System.out.printf("Heads: %d, Tails: %d\n", headsNum, tailsNum);
+
+        if (headsNum > tailsNum)
+            System.out.println("You won!");
+        else
+            System.out.println("You lost");
     }
 }
