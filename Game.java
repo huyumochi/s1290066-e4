@@ -26,8 +26,8 @@ public class Game {
         System.out.printf("Heads: %d, Tails: %d\n", headsNum, tailsNum);
 
         if (headsNum > tailsNum)
-            System.out.println("You won!");
+            System.out.printf("%s won!\n", name);
         else
-            System.out.println("You lost");
+            System.out.printf("%s lost\n", name);
     }
 }
